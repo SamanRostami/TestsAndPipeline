@@ -30,8 +30,8 @@ jobs:
       - name: Run generate.py
         run: python generate.py
 
-      - name: Run csvtojson.py
-        run: python csvtojson.py
+      - name: Run csvToJSON.py
+        run: python csvToJSON.py
 
       - name: Run tests
         run: pytest test_all.py
