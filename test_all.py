@@ -18,6 +18,9 @@ class TestDataFiles(unittest.TestCase):
             rows = list(reader)
             self.assertGreaterEqual(len(rows), 900, "CSV-filen ska innehålla minst 900 rader")
 
+    def test_fail():
+        assert False, "Det här testet ska alltid faila"
+
     def test_json_properties(self):
         expected_properties = {"Givenname", "Surname", "Streetaddress", "City", "Zipcode",
             "Country", "CountryCode", "NationalId", "TelephoneCountryCode",
